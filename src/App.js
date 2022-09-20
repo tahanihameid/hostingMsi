@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import NavBar from "./components/NavBar/NavBar";
+import { Stack } from "@mui/material";
+import { makeStyles } from "@material-ui/core/styles";
+import Feed from "./GeneralCompoments/Feed/Feed";
+import Sidebar from "./GeneralCompoments/Sidebar/Sidebar";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Stack direction="row" justifyContent="space-between">
+        <Sidebar />
+        <Feed />
+      </Stack>
     </div>
   );
 }

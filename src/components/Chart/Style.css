@@ -1,0 +1,112 @@
+/*body {
+    --fgcolor: #ff5f5f;
+    --bgcolor:rgb(255, 255, 255);
+     color: white;
+  
+  }
+ text {
+    font-family: sans-serif;
+    font-weight: bold;
+    text-anchor: middle;
+   
+  }
+  
+
+  .demo {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    background:
+      conic-gradient(var(--fgcolor) 0deg, var(--fgcolor) 50deg, transparent 204deg),
+      repeating-conic-gradient(var(--fgcolor) 0deg 0.5deg, var(--bgcolor) 0.5deg 3deg);
+    
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .demo > span {
+    /* The "value" element */
+    /* Sets the size of the inner circle.*/
+   /* width: 50%;
+    height: 50%;
+    
+    /* fill the center with the background color */
+    /*background: var(--bgcolor);
+    
+    /* make it a circle */
+   /* border-radius: 50%;
+    
+    /* center the value on both axes */
+   /* display: flex;
+   /* justify-content: center;
+    align-items: center;
+  
+    /* text treatment */
+    /*font-size: 1rem;
+    font-weight: bold;
+  }*/
+
+ .container {
+  margin-top: 50px;
+  display :flex ; 
+  align-items : center ; 
+  justify-content: center;
+
+
+ } 
+ .skill{
+position : relative 
+ }
+ .outer{
+  width : 160px ;
+  height :160px ; 
+  border-radius: 50%;
+  border : 1px  ;
+
+  display :flex ; 
+  align-items : center ; 
+  justify-content: center;
+  box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15), 
+          -6px -6px 10px -1px rgba(255,255,255,0.7)
+ }
+ .inner{
+
+  height :120px ;
+  width : 120px;
+  border-radius: 50%;
+  box-shadow:  inset 4px 4px 6px -1px rgba(0,0,0,0.2), 
+               inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+               -0.5px -0.5px  0px  rgba(255,255,255,1),
+               -0.5px -0.5px  0px  rgba(0,0,0,0.15),
+               0px 12px 10px -10px rgba(0,0,0,0.05)
+ }
+ #number {
+  font-weight: 600;
+  color : #555;
+  margin-top: 50px;
+ }
+ circle{
+  fill : none ;
+  stroke : url(#GradientColor);
+  stroke-width:  20px;
+  stroke-dasharray: 472;
+stroke-dashoffset: 472;
+animation: anim 2s linear forwards;
+  
+ }
+ svg{
+  position : absolute ; 
+ margin-bottom: 250px;
+ margin-right: 60px;
+
+ }
+
+ @keyframes anim {
+  100%{
+    stroke-dashoffset: 80.24;
+  }
+ }
