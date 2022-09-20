@@ -6,13 +6,16 @@
       "**/.*",
       "**/node_modules/**"
     ],
-   
-    "headers":[
-     { "source" : "/api.json" , 
-      "headers" : [{
-      "key": "Access-Control-Allow-Origin",
-      "value": "*"
-    }]}
+    "headers": [
+      {
+        "source": "/api.json",
+        "headers": [
+          {
+            "key": "Access-Control-Allow-Origin",
+            "value": "*"
+          }
+        ]
+      }
     ]
   },
   "emulators": {
